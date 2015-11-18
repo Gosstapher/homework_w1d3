@@ -45,4 +45,23 @@ def number_of_bank_accounts()
   ACCOUNTS.length
 end
 
+def first_bank_account_holder()
+  ACCOUNTS.first[:holder_name]
+end
+
+def print_owner_names()
+  for i in ACCOUNTS
+    puts "#{i[:holder_name]}"
+  end
+end
+
+def total_cash_in_bank()
+  for i in ACCOUNTS
+    
+  end
+end
+
+def last_bank_account_holder()
+  ACCOUNTS.first[:holder_name]
+end  
 
