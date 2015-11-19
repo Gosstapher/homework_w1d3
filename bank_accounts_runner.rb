@@ -17,7 +17,7 @@ puts "\n"
 
 ###total cash in bank
 total_cash = total_cash_in_bank()
-puts "total in bank #{total_cash}"
+puts "total in bank £#{total_cash}"
 puts "\n"
 
 ###last account owner
@@ -26,10 +26,13 @@ puts "last bank account owner is #{last_bank_owner}"
 puts "\n"
 
 ###average bank account value
+cash_average = average_account_value()
+puts "average ammount in accounts  £#{cash_average}"
+puts "\n"
 
 ###total cash in business accounts
 total_business_cash = total_cash_in_business_accounts()
-puts "total cash in just the business accounts is #{total_business_cash}"
+puts "total cash in just the business accounts is £#{total_business_cash}"
 puts "\n"
 
 ###holder of largest bank account

@@ -68,6 +68,11 @@ def last_bank_account_holder()
 end  
 
 def average_account_value()
+  cash_total = 0
+  for i in ACCOUNTS
+    cash_total += i[:amount] / ACCOUNTS.size
+  end
+  return cash_total
 end
 
 def total_cash_in_business_accounts()
