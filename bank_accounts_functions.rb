@@ -56,12 +56,30 @@ def print_owner_names()
 end
 
 def total_cash_in_bank()
+  cash_total = 0
   for i in ACCOUNTS
-    
+    cash_total += i[:amount]
   end
+  return cash_total
 end
 
 def last_bank_account_holder()
   ACCOUNTS.first[:holder_name]
 end  
+
+def average_account_value()
+end
+
+def total_cash_in_business_accounts()
+  cash_total = 0
+  for i in ACCOUNTS
+    cash_total += i[:amount] if i[:type] == "business"
+  end
+  return cash_total
+end
+
+
+
+
+
 

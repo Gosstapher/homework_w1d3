@@ -28,6 +28,9 @@ puts "\n"
 ###average bank account value
 
 ###total cash in business accounts
+total_business_cash = total_cash_in_business_accounts()
+puts "total cash in just the business accounts is #{total_business_cash}"
+puts "\n"
 
 ###holder of largest bank account
 
